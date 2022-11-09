@@ -5,17 +5,8 @@ spack:
   concretizer:
     unify: true
   specs:
-  - hipblas@5.2.3
-  - hipsolver@5.2.3
-  - hipfft@5.2.3
-  - rocm-cmake@5.2.3
-  - rocprofiler-dev@5.2.3
-  - rocrand@5.2.3
-  - rocthrust@5.2.3
-  - rocprim@5.2.3
-  - rocsparse@5.2.3
-  - mesa~llvm
-  - magma+rocm
+  - cuda@11.7.1
+  - magma+cuda
   - intel-mkl@2020.4.304 threads=openmp
   - libxc
   - spglib
