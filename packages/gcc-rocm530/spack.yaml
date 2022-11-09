@@ -1,0 +1,30 @@
+spack:
+  include:
+  - compilers.yaml
+  - config.yaml
+  concretizer:
+    unify: true
+    targets:
+      host_compatible: false
+  specs:
+  - hipblas@5.3.0
+  - hipsolver@5.3.0
+  - hipfft@5.3.0
+  - rocm-cmake@5.3.0
+  - rocprofiler-dev@5.3.0
+  - rocrand@5.3.0
+  - rocthrust@5.3.0
+  - rocprim@5.3.0
+  - rocsparse@5.3.0
+  - mesa~llvm
+  - magma+rocm
+  - intel-mkl@2020.4.304 threads=openmp
+  - libxc
+  - spglib
+  - gsl~external-cblas
+  - hdf5~mpi
+  view: false
+  packages:
+    all:
+      compiler: [gcc]
+      variants: amdgpu_target=gfx90a amdgpu_target_sram_ecc=gfx90a target=zen3

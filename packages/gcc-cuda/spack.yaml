@@ -16,3 +16,4 @@ spack:
   packages:
     all:
       compiler: [gcc]
+      variants: cuda_arch=80 target=zen3
