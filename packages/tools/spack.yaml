@@ -25,5 +25,10 @@ spack:
   - imagemagick
   view: false
   packages:
+    fontconfig:
+      buildable: false
+      externals:
+        spec: fontconfig@2.12.6
+        prefix: /usr/bin
     all:
       compiler: [gcc]
