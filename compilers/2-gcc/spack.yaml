@@ -1,4 +1,6 @@
 spack:
+  concretizer:
+    unify: false
   include:
   - packages.yaml
   - config.yaml
