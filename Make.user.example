@@ -40,6 +40,9 @@ export SPACK_SYSTEM_CONFIG_PATH := $(SOFTWARE_STACK_PROJECT)/config/<name>
 # Put clingo and friends here...
 export SPACK_USER_CACHE_PATH := $(SOFTWARE_STACK_PROJECT)/cache
 
+# enable backtrace
+export SPACK_BACKTRACE := 1
+
 # Output the full build log to stdout.
 # export SPACK_INSTALL_FLAGS := --verbose
 
